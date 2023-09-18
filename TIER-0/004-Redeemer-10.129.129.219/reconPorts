@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Mon Sep 18 12:25:58 2023 as: nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn -oG reconPorts 10.129.129.219
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.129.219 ()	Status: Up
+Host: 10.129.129.219 ()	Ports: 6379/open/tcp//redis///
+# Nmap done at Mon Sep 18 12:26:15 2023 -- 1 IP address (1 host up) scanned in 17.01 seconds
