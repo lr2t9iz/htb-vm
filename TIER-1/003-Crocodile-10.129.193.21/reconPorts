@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Tue Sep 19 12:53:35 2023 as: nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv -oG reconPorts 10.129.193.21
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.193.21 ()	Status: Up
+Host: 10.129.193.21 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http///
+# Nmap done at Tue Sep 19 12:53:53 2023 -- 1 IP address (1 host up) scanned in 17.97 seconds
