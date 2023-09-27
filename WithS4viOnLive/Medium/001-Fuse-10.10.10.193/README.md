@@ -1,0 +1,4 @@
+# topic
+- windows
+- whatweb 
+- crackmapexec
