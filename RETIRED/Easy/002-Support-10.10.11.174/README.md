@@ -1,0 +1,5 @@
+# topic 
+- windows
+- smbmap
+    - 
+- crackmapexec
