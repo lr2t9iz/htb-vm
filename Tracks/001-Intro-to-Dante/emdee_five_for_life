@@ -1,0 +1,22 @@
+#!/bin/bash 
+
+# Test Debbug
+#WEB=$(curl -XGET -s -c cookie.txt http://206.189.28.151:30013/)
+#echo -e "<${WEB}>"
+#TXT=$(echo $WEB | grep string.*center -o | awk -F '<' '{print $3}' | awk -F '>' '{print $2}')
+#echo -e "<${TXT}>"
+#MD5=$(echo  $TXT | md5sum | awk '{print $1}')
+#echo $(md5sum <<< $TXT)
+#echo -e "<${MD5}>"
+#FLAG=$(curl -XPOST -H 'Content-Type: application/x-www-form-urlencoded' -s -b cookie.txt -d "hash=${MD5}" http://206.189.28.151:30013/ -v)
+#echo $FLAG
+
+
+# get flag
+h0st="http://206.189.28.151:30013"
+curl -XPOST $h0st \
+	-d "hash=$(curl -s -c cookie.txt $h0st | grep -o string.*center | awk -F '<' '{print $3}' | awk -F '>' '{print $2}' | tr -d '\n' | md5sum | awk '{print $1}')" \
+	-b cookie.txt -s
+
+# Other search text
+# cut -d '>' -f 4 | cut -d '<' -f1 | tr -d '\n' 
